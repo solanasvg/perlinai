@@ -1,0 +1,38 @@
+body {
+  background-color: #101021;
+  margin:0;
+  overflow: hidden;
+}
+
+canvas {
+      background-color: #101021
+      height: 100vw;
+}
+
+@keyframes blink {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+}
+
+.hud {
+  animation: blink;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top:0;
+  left:0;
+  padding: 3vh;
+  font-family: monospace;
+  font-size: 2vh;
+  color: #00ffed;
+  letter-spacing: 12px;
+  span {
+    margin: 10px;
+    position: absolute;
+    display: block;
+  }
+}
